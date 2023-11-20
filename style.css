@@ -126,8 +126,8 @@ nav .logo {
 .welcome-card h3 {
     background: rgb(2, 0, 36);
     background: linear-gradient(180deg, rgb(2, 0, 36) 0%, rgb(173, 223, 205) 100%);
+    -webkit-background-clip: text;
     background-clip: text;
-    ;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
 }
