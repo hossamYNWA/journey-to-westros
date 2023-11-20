@@ -136,8 +136,8 @@ nav .logo {
     font-size: 1.2rem;
 }
 
-.wars-h1 {
-    height: 125px;
+.wars-h1,.characters h3 {
+    min-height: 70px;
     line-height: 125px;
     font-size: 1.5rem;
 }
@@ -164,12 +164,6 @@ nav .logo {
 }
 
 /* styling charachters section */
-.characters h3 {
-    height: 100px;
-    line-height: 70px;
-    font-size: 1.5rem;
-    ;
-}
 
 .characters .card img {
     height: 500px;
@@ -350,6 +344,16 @@ nav .logo {
 
     .news-card .content .card-text {
         height: 46%;
+    }
+
+    .wars-h1,.characters h3 {
+        line-height: 50px;
+        padding: 5%;
+    }
+
+    .news-card .avatar img, .avatar-rev img {
+        background-color: #6c757d;
+        object-fit:contain
     }
 }
 
