@@ -1,0 +1,413 @@
+/* declaring our font (uploaded from http://sharefonts.net || https://dwl.freefontsfamily.com) */
+@font-face {
+    font-family: "got";
+    src: url("./font/got.woff2")format("woff2"),
+}
+
+nav {
+    z-index: 9999;
+    width: 100%;
+    opacity: .9;
+    ;
+}
+
+.ff-got {
+    font-family: "got";
+    font-size: 0.8rem;
+    letter-spacing: 1px !important;
+    line-height: 1.8rem;
+}
+
+nav a.logo-link {
+    display: inline-block;
+    height: 100%;
+    width: 40px;
+}
+
+nav .logo {
+    width: 100%;
+    height: 100%;
+}
+
+/* right border to the title */
+.border-right {
+    border-right: 1px solid #aeacae;
+    padding-right: 15px;
+    font-size: 1rem;
+}
+
+/* custome hover effect on navbar elements */
+.custom-hover {
+    transition: all 0.3s;
+}
+
+/* Define the hover effect */
+.custom-hover:hover::first-letter {
+    color: #171616;
+    font-weight: bold;
+}
+
+.dropdown-menu>li a {
+    font-size: 0.7rem;
+}
+
+.dropdown-menu>li a:hover {
+    color: #e1e6e6;
+    background-color: #484848;
+}
+
+.form-control:focus {
+    border-color: #198754;
+    box-shadow: 0 0 0 .25rem rgb(204, 229, 217);
+}
+
+.search-input {
+    font-size: 1.2rem;
+    padding: 8px 20px;
+    font-family: serif;
+}
+
+/* fixed icons styling */
+.fixed-icons-container {
+    position: fixed;
+    right: 20px;
+    width: 55px;
+    height: 270px;
+    top: 30%;
+    z-index: 9;
+}
+
+.fixed-icons-container i {
+    font-size: 2.3rem;
+    color: #48484f;
+}
+
+.fixed-icons-container a:first-child:hover i {
+    color: #4267B2;
+
+}
+
+.fixed-icons-container a:nth-child(3):hover i,
+.fixed-icons-container a:nth-child(5):hover i {
+    color: black;
+
+}
+
+.fixed-icons-container a:nth-child(2):hover i {
+    color: #C13584;
+
+}
+
+.fixed-icons-container a:nth-child(4):hover i,
+.join-box:nth-child(4):hover i {
+    color: #FF0000;
+
+}
+
+/* styling carousel section */
+.carousel {
+    height: 500px;
+    overflow: hidden;
+    margin-top: 70px;
+}
+
+.carousel-inner>.carousel-item>img {
+    object-fit: cover;
+    overflow: hidden;
+    height: 500px
+}
+
+.bg-opacity-4 {
+    background-color: rgba(0, 0, 0, .4);
+    bottom: 40px
+}
+
+/* styling the card part */
+.welcome-card h3 {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(180deg, rgb(2, 0, 36) 0%, rgb(173, 223, 205) 100%);
+    background-clip: text;
+    ;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.fs-big {
+    font-size: 1.2rem;
+}
+
+.wars-h1 {
+    height: 125px;
+    line-height: 125px;
+    font-size: 1.5rem;
+}
+
+/* wars accordion styling */
+.accordion-button:focus {
+    box-shadow: none;
+    border: 1px solid #198754;
+    background-color: #eaeeec;
+}
+
+/* translation part */
+.translate {
+    background-color: #6c757d3d;
+}
+
+/* empty section styling */
+.empty-section {
+    background-image: url("./images/kgs.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+
+/* styling charachters section */
+.characters h3 {
+    height: 100px;
+    line-height: 70px;
+    font-size: 1.5rem;
+    ;
+}
+
+.characters .card img {
+    height: 500px;
+    object-fit: cover;
+}
+
+.characters .card-edit {
+    margin: 0 auto !important;
+    height: 645px;
+}
+
+.characters .card-edit::after,
+.characters .card-edit::before {
+    content: "";
+    background-color: #9eb5a4;
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: .3;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+.characters .card-edit::before {
+    bottom: 0;
+    right: 0;
+}
+
+.characters .card-edit::after {
+    top: 0;
+    left: 0;
+}
+
+.characters .card-edit:hover::after,
+.characters .card-edit:hover::before {
+    width: 100%;
+    height: 100%
+}
+
+.characters .card-edit .btn {
+    z-index: 999;
+    position: relative;
+}
+
+.btn-ch {
+    display: block;
+    width: 113px;
+    margin-left: 140px;
+}
+
+/* second empty section */
+.empty-2 {
+    background-image: url("https://patricksponaugle.files.wordpress.com/2013/12/game-of-thrones-poster-north-of-the-wall.jpg");
+}
+
+/* tv shows */
+.outer-card {
+    height: 420px;
+    overflow: hidden;
+    border-radius: 30px;
+    transition: 0.5s;
+    margin: 20px auto;
+}
+
+.outer-card:hover {
+    transform: scale(0.9);
+}
+
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-img-overlay {
+    background-color: #6a6c6bd6;
+    padding: 8%;
+    transition: 0.5s
+}
+
+.card-img-overlay:hover {
+    padding-top: 10%;
+}
+
+.sml-logo {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.img-cap {
+    font-size: 13px;
+}
+
+/* news styling */
+
+.news-card {
+    height: 400px
+}
+
+.art-date::after {
+    content: "";
+    width: 80px;
+    background-color: #c90d0d;
+    position: absolute;
+    left: 0;
+    height: 2px;
+    bottom: -3px;
+    transition: 0.7s
+}
+
+.art-date-dark::after {
+    background-color: #011111;
+}
+
+.news-card:hover .art-date::after {
+    width: 120px;
+}
+
+.news-card:hover .avatar>img,
+.news-card:hover .avatar-rev>img {
+    transform: scale(1.1);
+}
+
+.news-card .shortcuts {
+    bottom: 10px;
+    left: 3rem;
+}
+
+.news-card .shortcuts span {
+    display: inline-block;
+    background-color: #6c757d;
+    margin-right: 8px;
+    padding: 2px 6px;
+    font-size: 0.9rem;
+    color: #fafbfa;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.news-card .content {
+    height: 100%;
+}
+
+.news-card .avatar img,
+.avatar-rev img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.news-card .content .card-text {
+    height: 70%;
+    text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 768px) {
+
+    .news-card .avatar,
+    .avatar-rev {
+        order: 1 !important;
+        height: 40% !important;
+    }
+
+    .news-card .content {
+        order: 2 !important;
+        height: 60% !important;
+    }
+
+    .news-card .content .card-text {
+        font-size: 0.7rem !important;
+    }
+
+    .news-card .content .art-date {
+        font-size: 0.6rem;
+    }
+
+    .news-card .content .card-text {
+        height: 46%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .news-card .avatar {
+        transform: skew(-6deg) translateX(33px);
+    }
+
+    .news-card .avatar-rev {
+        transform: skew(6deg) translateX(-33px);
+    }
+}
+
+/* join us */
+.join-box {
+    background-color: #e3e8e2;
+    height: 180px;
+    color: #3c3a3a;
+    transition: 0.6s;
+    margin: 20px;
+    width: 200px
+}
+
+.join-box i {
+    font-size: 50px;
+    display: inline-block;
+    margin: 5px auto;
+}
+
+.join-box:first-child:hover i {
+    color: #0088cc
+}
+
+.join-box:nth-child(2):hover i {
+    color: #4FCE5D
+}
+
+.join-box:nth-child(3):hover i {
+    color: #5865F2
+}
+
+footer {
+    background-color: #484848;
+    min-height: 315px;
+}
+
+.footer-title {
+    padding: 20px;
+    font-weight: bold;
+
+}
+
+footer .info i {
+    font-size: 30px;
+    display: inherit
+}
+
+footer .imp-links a {
+    text-decoration: none;
+    color: whitesmoke
+}

@@ -1,0 +1,649 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Westros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="./style.css" rel="stylesheet"">
+  </head>
+  <body >
+    <!-- nav bar -->
+    <nav class=" navbar navbar-expand-lg bg-body-secondary position-fixed top-0 start-0 ff-got">
+    <div class="container-fluid">
+        <a class="navbar-brand logo-link" href="#">
+            <img src="./images/logo.png" class="logo" alt="westros logo">
+        </a>
+        <a class="navbar-brand border-right fs-5" href="#">westros</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class=" custom-hover nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="custom-hover nav-link" href="#">History</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="custom-hover nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Regions
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">King's Landing</a></li>
+                        <li><a class="dropdown-item" href="#">Winterfell</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">The Vale</a></li>
+                        <li><a class="dropdown-item" href="#">The Reach</a></li>
+                        <li><a class="dropdown-item" href="#">The Stormlands</a></li>
+                        <li><a class="dropdown-item" href="#">The Riverlands</a></li>
+                        <li><a class="dropdown-item" href="#">Dorne</a></li>
+
+                        <li><a class="dropdown-item" href="#">The Westerlands </a></li>
+                        <li><a class="dropdown-item" href="#">Beyond the Wall</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="search-input form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+    </nav>
+    <!-- end of nav bar -->
+    <!-- START OF FLOATING FIXED ICONS -->
+    <div class="d-flex flex-column align-items-center justify-content-between fixed-icons-container ">
+        <a href="#">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="#">
+            <i class="fa-brands fa-square-x-twitter"></i>
+        </a>
+        <a href="#">
+            <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="#">
+            <i class="fa-brands fa-tiktok"></i>
+        </a>
+    </div>
+    <!-- END OF FLOATING FIXED ICONS -->
+    <!-- start of carousel part -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <!-- INDICATORS -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <!-- SLIDES -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./images/wnt.png" class="d-block w-100" alt="WINTERFELL">
+                <div class="carousel-caption bg-opacity-4 d-none d-md-block">
+                    <h5 class="ff-got fs-big">Winterfell</h5>
+                    <p>the capital of the Kingdom of the North and the seat and the ancestral home of the royal House
+                        Stark.</p>
+                    <button class="btn btn-sm btn-secondary">Know more</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./images/dorn.png" class="d-block w-100" alt="dorne">
+                <div class="carousel-caption bg-opacity-4 d-none d-md-block">
+                    <h5 class="ff-got fs-big">Dorne</h5>
+                    <p>Dorne is the large peninsula which makes up the southernmost part of
+                        Westeros, and is one of the constituent regions of the Seven Kingdoms.</p>
+                    <button class="btn btn-sm btn-secondary">Know more</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./images/har.png" class="d-block w-100" alt=" harrenhal">
+                <div class="carousel-caption bg-opacity-4 d-none d-md-block">
+                    <h3 class="ff-got fs-big">Harrenhal</h3>
+                    <p class="fs-6">
+                        he great castle was finally finished in King Harren's time, and he arrogantly named it
+                        "Harrenhal" after himself.</p>
+                    <button class="btn btn-sm btn-secondary">Know more</button>
+                </div>
+            </div>
+        </div>
+        <!-- CONTROLS -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- end of carousel part -->
+    <!-- START OF CARD -->
+    <div class="card welcome-card">
+        <div class="card-body ">
+            <h3 class="card-title ff-got fs-4">WELCOME</h3>
+            <p class="card-text">Westeros is one of the four known continents in the fictional world of GRR.Martin, the
+                others being Essos, Sothoryos, and Ulthos. Most of the area of Westeros is covered by a political entity
+                known as the Seven Kingdoms, while the far north beyond the Wall includes the free folk. The closest
+                foreign nations to Westeros are the Free Cities, a collection of independent city-states across the
+                narrow sea in western Essos. To the south of Westeros lie the Summer Isles.</p>
+            <a href="#" class="card-link"><button class="btn btn-outline-secondary">learn more</button></a>
+        </div>
+    </div>
+    <!-- END OF CARD -->
+    <!-- start of big header of paces -->
+    <h1 class="wars-h1 ff-got rounded lh-150 text-capitalize bg-secondary text-center fw-bold text-light">
+        Popular wars in Westros history
+    </h1>
+    <!-- end of big header of paces -->
+    <!-- START OF WARS ACCORDION -->
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button text-capitalize ff-got collapsed " type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                    aria-controls="collapseOne">
+                    dance of the dragons
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>The Dance of the Dragons</strong> was a civil war during Targaryen rule of the Seven
+                    Kingdoms. A war of succession between Aegon II and his half-sister Rhaenyra over their father
+                    Viserys I's throne, the war was fought from 129 AC to 131 AC. It saw the deaths of both rival
+                    monarchs, and the crowning of Rhaenyra's son, Aegon III.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button ff-got collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Robert's Rebellion
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Robert's Rebellion </strong>also known as the War of the Usurper,was a rebellion against
+                    House Targaryen, primarily instigated by Eddard Stark, Jon Arryn, and Robert Baratheon, for whom it
+                    is named. It lasted "close to a year" and resulted in the end of the Targaryen dynasty in the Seven
+                    Kingdoms and the beginning of Robert Baratheon's reign.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button ff-got collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    War of the Five Kings
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>The War of the Five Kings</strong> was a major multi-theater civil war in the Seven Kingdoms
+                    of Westeros that erupted in the wake of the death of King Robert I. In essence, the war was a
+                    three-way battle for the Iron Throne fought alongside two independence movements. The five kings in
+                    question were Robert's heir apparent, Joffrey Baratheon, Robert's younger brothers, Stannis and
+                    Renly Baratheon, the "King in the North" Robb Stark, and the "King of the Iron Islands" Balon
+                    Greyjoy.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END OF WARS ACCORDION -->
+    <!-- start of translation part -->
+    <hr />
+    <section class="translate">
+        <h3 class="fs-big ff-got text-center py-3 text-light rounded bg-secondary">
+            Translate From Dothraki To English </h3>
+        <p class="fs-5 px-3 my-0">Write and Translate<a class="link-secondary text-decoration-none"
+                href="https://translate.google.com.eg/?hl=en"> Press
+                Here</a></p>
+        <a href="#"><button class="btn btn-light m-2">copy</button></a>
+        <div class="input-group">
+            <span class="input-group-text">translate</span>
+            <textarea class="form-control" rows="4" aria-label="With textarea"></textarea>
+        </div>
+    </section>
+    <hr />
+    <section class="translate">
+        <h3 class="fs-big ff-got text-center py-3 text-light rounded bg-secondary">
+            Translate From valerian To Dothraki </h3>
+        <p class="fs-5 px-3 my-0">Write and Translate<a class="link-secondary text-decoration-none"
+                href="https://translate.google.com.eg/?hl=en"> Press
+                Here</a></p>
+        <a href="#"><button class="btn btn-light m-2">copy</button></a>
+        <div class="input-group">
+            <span class="input-group-text">translate</span>
+            <textarea class="form-control" rows="4" aria-label="With textarea"></textarea>
+        </div>
+    </section>
+    <hr />
+    <section class="translate">
+        <h3 class="fs-big ff-got text-center py-3 text-light rounded bg-secondary">
+            Translate From valerian To English </h3>
+        <p class="fs-5 px-3 my-0">Write and Translate<a class="link-secondary text-decoration-none"
+                href="https://translate.google.com.eg/?hl=en"> Press
+                Here</a></p>
+        <a href="#"><button class="btn btn-light m-2">copy</button></a>
+        <div class="input-group">
+            <span class="input-group-text">translate</span>
+            <textarea class="form-control" rows="4" aria-label="With textarea"></textarea>
+        </div>
+    </section>
+    <hr />
+    <!-- end of translation part -->
+    <!-- start of empty section -->
+    <section class="empty-section container-fluid">
+    </section>
+    <!-- end of empty section -->
+    <!-- start of characters part -->
+    <section class="characters">
+        <h3 class="fs-big ff-got text-center fw-bold py-3 text-light rounded bg-secondary">popular characters in
+            westros </h3>
+        <div class="container">
+            <div class="row">
+                <!-- charachter start -->
+                <div class="col-lg-4 col-md-6 mx-auto  p-3">
+                    <div class="card card-edit mx-auto" style="width: 18rem;">
+                        <img src="./images/dany.jpg" class="card-img-top" alt="Daenerys Targaryen">
+                        <div class="card-body">
+                            <h5 class="card-title">Daenerys Targaryen</h5>
+                            <p class="card-text">the mother of dragons</p>
+                            <a href="#" class="btn btn-ch btn-secondary">Know More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- charachter end -->
+                <!-- charachter start -->
+                <div class="col-lg-4 col-md-6 mx-auto  p-3">
+                    <div class="card card-edit mx-auto" style="width: 18rem;">
+                        <img src="./images/twn.JPG" class="card-img-top" alt="Tywin Lannister">
+                        <div class="card-body">
+                            <h5 class="card-title">Tywin Lannister</h5>
+                            <p class="card-text">was the hand of the king during 2 separate wars</p>
+                            <a href="#" class="btn btn-ch btn-secondary">Know More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- charachter end -->
+                <!-- charachter start -->
+                <div class="col-lg-4 col-md-6 mx-auto  p-3">
+                    <div class="card card-edit mx-auto" style="width: 18rem;">
+                        <img src="./images/obr.JPG" class="card-img-top" alt="Oberyn Martell">
+                        <div class="card-body">
+                            <h5 class="card-title">Oberyn Martell</h5>
+                            <p class="card-text">prince of dorne</p>
+                            <a href="#" class="btn btn-ch btn-secondary">Know More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- charachter end -->
+                <!-- charachter start -->
+                <div class="col-md-6 col-lg-4 p-3 mx-auto">
+                    <div class="card card-edit mx-auto" style="width: 18rem;">
+                        <img src="./images/bolton.JPG" class="card-img-top" alt="bolton">
+                        <div class="card-body">
+                            <h5 class="card-title">Ramsay Bolton</h5>
+                            <p class="card-text">the last member of house Bolton and as killd in the battle of bastards
+                            </p>
+                            <a href="#" class="btn btn-ch btn-secondary">Know More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- charachter end -->
+                <!-- charachter start -->
+                <div class="col-lg-4 col-md-6 p-3 mx-auto">
+                    <div class="card card-edit mx-auto" style="width: 18rem;">
+                        <img src="./images/cerci.JPG" class="card-img-top" alt="Cersei Lannister">
+                        <div class="card-body">
+                            <h5 class="card-title">Cersei Lannister</h5>
+                            <p class="card-text">widow of King Robert Baratheon and Queen of the Seven Kingdoms</p>
+                            <a href="#" class="btn btn-ch btn-secondary">Know More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- charachter end -->
+                <!-- charachter start -->
+                <div class="col-lg-4 col-md-6 p-3 mx-auto">
+                    <div class="card card-edit mx-auto" style="width: 18rem;">
+                        <img src="./images/varis.JPG" class="card-img-top" alt="Varys">
+                        <div class="card-body">
+                            <h5 class="card-title">Lord Varys</h5>
+                            <p class="card-text">the master of whisperers</p>
+                            <a href="#" class="btn btn-ch btn-secondary">Know More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- charachter end -->
+                <!-- charachter start -->
+                <div class="col-lg-4 col-md-6 p-3 mx-auto">
+                    <div class="card card-edit mx-auto" style="width: 18rem;">
+                        <img src="./images/bran.JPG" class="card-img-top" alt="Bran Stark">
+                        <div class="card-body">
+                            <h5 class="card-title">Bran Stark</h5>
+                            <p class="card-text">new Three-Eyed Raven, using his supernatural gifts to beat the whites
+                            </p>
+                            <a href="#" class="btn btn-ch btn-secondary">Know More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- charachter end -->
+                <!-- charachter start -->
+                <div class="col-lg-4 col-md-6 p-3 mx-auto">
+                    <div class="card card-edit mx-auto" style="width: 18rem;">
+                        <img src="./images/snow.JPG" class="card-img-top" alt="Jon Snow">
+                        <div class="card-body">
+                            <h5 class="card-title">Jon Snow</h5>
+                            <p class="card-text"> born Aegon Targaryen, The true heir of the throne</p>
+                            <a href="#" class="btn btn-ch btn-secondary">Know More</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- charachter end -->
+            </div>
+        </div>
+
+    </section>
+    <!-- end of characters part -->
+    <!-- start of empty section -->
+    <section class="empty-section empty-2 container-fluid">
+
+    </section>
+    <hr />
+    <!-- end of empty section -->
+    <!-- start of TV shows section -->
+    <section class="container-fluid" id="tv-shows">
+
+        <h3 class="wars-h1 shows-h3 ff-got rounded lh-150 text-capitalize bg-secondary text-center fw-bold text-light">
+            TV shows </h3>
+        <div class="container">
+            <div class="mt-5 gx-2 row flex-wrap">
+                <!-- TV show start -->
+                <div class="col-md-6 col-lg-4 col-12">
+                    <div class="outer-card card bg-dark text-white">
+                        <img src="https://www.tematika.com/media/catalog/Ilhsa/Imagenes/624667.jpg" class="card-img"
+                            alt="got cover">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title ff-got">Game of Thrones</h5>
+                            <p class="card-text img-cap">Nine noble families fight for control over the lands of
+                                Westeros,
+                                while an
+                                ancient enemy returns after being dormant for a millennia.</p>
+                            <p class="card-text"><i class="fa-solid fa-calendar-day"></i> first aired on April 2011</p>
+                            <p class="card-text"><i class="fa-solid fa-clock"></i> Duration: 54 mins</p>
+                            <img class="sml-logo" src="./images/got.JPG" />
+                            <p class="img-cap"> <span class="fw-bold">Stars: </span>Emilia Clarke, Peter Dinklage, Kit
+                                Harington</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- TV show end -->
+                <!-- TV show start -->
+                <div class="col-md-6 col-lg-4 col-12">
+                    <div class="outer-card card bg-dark text-white">
+                        <img src="./images/hod.JPG" class="card-img" alt="got cover">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title ff-got">House of the Dragon</h5>
+                            <p class="card-text img-cap">An internal succession war within House Targaryen at the height
+                                of
+                                its power, 172 years before the birth of Daenerys Targaryen.</p>
+                            <p class="card-text"><i class="fa-solid fa-calendar-day"></i> first aired on August 2022</p>
+                            <p class="card-text"><i class="fa-solid fa-clock"></i> Duration: 57 mins</p>
+                            <img class="sml-logo" src="./images/hod.JPG" />
+                            <p class="img-cap"> <span class="fw-bold">Stars: </span>Rhys Ifans, Matt Smith, Graham
+                                McTavish
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- TV show end -->
+                <!-- TV show start -->
+                <div class="col-md-6 col-lg-4 col-12">
+                    <div class="outer-card card bg-dark text-white">
+                        <img src="./images/knt.jpg" class="card-img" alt="got cover">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title ff-got">A Knight of the Seven Kingdoms</h5>
+                            <p class="card-text img-cap"> Set 90 years before Game of Thrones, these are often referred
+                                to
+                                as the Dunk & Egg stories</p>
+                            <p class="card-text"><i class="fa-solid fa-calendar-day"></i> Will be aired in 2025</p>
+                            <p class="card-text"><i class="fa-solid fa-clock"></i> Duration: not decided yet</p>
+                            <img class="sml-logo" src="./images/knt.jpg" />
+                            <p class="img-cap"> <span class="fw-bold">Stars: </span>not decided yet</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- TV show end -->
+            </div>
+        </div>
+    </section>
+    <hr />
+    <!-- end of TV shows section -->
+    <!-- start  of houses section -->
+    <section class="my-3">
+        <h3
+            class="wars-h1 shows-h3 ff-got rounded lh-150 mb-5 text-capitalize bg-secondary text-center fw-bold text-light">
+            Most famous houses </h3>
+        <!-- start of article 1 -->
+        <article class="news-card rounded overflow-hidden container position-relative shadow my-5">
+            <div class="row h-100">
+                <div class="content col-lg-8 col-md-6 p-4 order-1">
+                    <h4>House Targaryen</h4>
+                    <small class="position-relative art-date"><i class="fa-solid fa-calendar-day"></i> Sat, Nov
+                        18<sup>th</sup> 2023</small>
+                    <p class="card-text overflow-hidden fs-6 w-75">
+                        a noble family of Valyrian descent who once ruled the Seven Kingdoms of Westeros. The Targaryen
+                        sigil is a red three-headed dragon, breathing red flames on black.The house words
+                        are "Fire and Blood".</p>
+                    <div class="shortcuts">
+                        <span><i class="fa-solid fa-podcast"></i> Podcast</span>
+                        <span><i class="fa-solid fa-clock"></i> 21 mins</span>
+                        <span><i class="fa-solid fa-play"></i> play episode</span>
+                    </div>
+                </div>
+                <div class="avatar overflow-hidden col-lg-4 col-md-6 h-100 order-2 p-0 m-0">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flag_of_House_Targaryen_of_Dragonstone.svg/1280px-Flag_of_House_Targaryen_of_Dragonstone.svg.png"
+                        alt="3 headed dragon">
+                </div>
+            </div>
+        </article>
+        <!-- end of article 1 -->
+        <!-- start of article 2-->
+        <article class="news-card rounded overflow-hidden container position-relative shadow my-5">
+            <div class="row h-100">
+                <div class="avatar-rev overflow-hidden col-lg-4 col-md-6 h-100 p-0 m-0">
+                    <img src="https://cdn.europosters.eu/image/1300/canvas-print-game-of-thrones-stark-i110931.jpg"
+                        alt="stark wolf">
+                </div>
+                <div class="content col-lg-8 col-md-6 p-4 position-relative ">
+                    <h4>House Stark</h4>
+                    <small class="position-relative art-date art-date-dark"><i class="fa-solid fa-calendar-day"></i>
+                        Sun,
+                        Nov
+                        12<sup>th</sup> 2023</small>
+                    <p class="overflow-hidden card-text fs-6 w-75">
+                        one of the Great Houses of Westeros and the principal noble house of the north. In days of old
+                        they ruled as Kings of Winter, but since Aegon's Conquest they have been Wardens of the North
+                        and ruled as Lords of Winterfell. Their seat, Winterfell, is an ancient castle renowned for its
+                        strength.</p>
+                    <div class="shortcuts">
+                        <span><i class="fa-solid fa-podcast"></i> Podcast</span>
+                        <span><i class="fa-solid fa-clock"></i> 36 mins</span>
+                        <span><i class="fa-solid fa-play"></i> play episode</span>
+                    </div>
+                </div>
+
+            </div>
+        </article>
+        <!-- end of article 2 -->
+        <!-- start of article 3-->
+        <article class="news-card rounded overflow-hidden container position-relative shadow my-5">
+            <div class="row h-100">
+                <div class="content col-lg-8 col-md-6 p-4 order-1">
+                    <h4>House Lannister</h4>
+                    <small class="position-relative art-date"><i class="fa-solid fa-calendar-day"></i> Wed, Nov
+                        8<sup>th</sup> 2023</small>
+                    <p class="card-text fs-6 w-75">
+                        the principal house of the westerlands. Their seat is Casterly Rock, though another branch
+                        exists in nearby Lannisport. Their sigil is a golden lion on a field of crimson. Their official
+                        motto is "Hear Me Roar!"</p>
+                    <div class="shortcuts">
+                        <span><i class="fa-solid fa-podcast"></i> Podcast</span>
+                        <span><i class="fa-solid fa-clock"></i> 42 mins</span>
+                        <span><i class="fa-solid fa-play"></i> play episode</span>
+                    </div>
+                </div>
+                <div class="avatar overflow-hidden col-lg-4 col-md-6 h-100 order-2 p-0 m-0">
+                    <img src="https://helios-i.mashable.com/imagery/articles/02jqthe7eJ6gzyHfkR2zxYV/hero-image.fill.size_1200x1200.v1623363316.jpg"
+                        alt="lion">
+                </div>
+            </div>
+        </article>
+        <!-- end of article 3-->
+        <!-- start of article 4-->
+        <article class="news-card rounded overflow-hidden container position-relative shadow my-5">
+            <div class="row h-100">
+                <div class="avatar-rev overflow-hidden col-lg-4 col-md-6 h-100 p-0 m-0">
+                    <img src="https://oyster.ignimgs.com/mediawiki/apis.ign.com/game-of-thrones/1/11/Wallpaper-greyjoy-1600.jpg"
+                        alt="Greyjoy logo">
+                </div>
+                <div class="content position-relative col-lg-8 col-md-6 p-4">
+                    <h4>House Greyjoy</h4>
+                    <small class="position-relative art-date art-date-dark"><i class="fa-solid fa-calendar-day"></i>
+                        Mon,
+                        Oct
+                        30<sup>th</sup> 2023</small>
+                    <p class=" overflow-hidden card-text fs-6 w-75">
+                        It rules over the Iron Islands, a harsh and bleak collection of forbidding islands off the west
+                        coast of Westeros, from the Seastone Chair in the castle of Pyke on the island of the same name.
+                        The head of the family is traditionally known as the Lord Reaper of Pyke. Their sigil is a
+                        golden kraken on a black field, and their house motto is "We Do Not Sow."</p>
+                    <div class="shortcuts ">
+                        <span><i class="fa-solid fa-podcast"></i> Podcast</span>
+                        <span><i class="fa-solid fa-clock"></i> 18 mins</span>
+                        <span><i class="fa-solid fa-play"></i> play episode</span>
+                    </div>
+                </div>
+
+            </div>
+        </article>
+        <!-- end of article 4-->
+    </section>
+    <!-- end  of houses section -->
+    <!-- start of join us section -->
+    <section style="margin-top:100px auto">
+        <h3 style="color:#484848" class="display-6 text-center fw-bold text-capitalize">join us</h3>
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- telegram start -->
+                <div
+                    class="join-box fs-5 rounded d-flex flex-column justify-content-evenly align-items-center text-center border border-secondary py-5 px-3">
+                    <p class=" text-capitalize">join our channel</p>
+                    <i class="fa-brands fa-telegram"></i>
+                    <a href="#" class="text-decoration-none text-dark">click here</a>
+                </div>
+                <!-- telegram end -->
+                <!-- whatsapp start -->
+                <div
+                    class="join-box fs-5 rounded  d-flex flex-column justify-content-evenly align-items-center text-center border border-secondary py-5 px-3">
+                    <p class=" text-capitalize">join our group</p>
+                    <i class="fa-brands fa-square-whatsapp"></i>
+                    <a href="#" class="text-decoration-none text-dark">click here</a>
+                </div>
+                <!-- whatsapp end -->
+                <!-- discord start -->
+                <div
+                    class="join-box fs-5 rounded d-flex flex-column justify-content-evenly align-items-center text-center border border-secondary py-5 px-3">
+                    <p class=" text-capitalize">join our community</p>
+                    <i class="fa-brands fa-discord"></i>
+                    <a href="#" class="text-decoration-none text-dark">click here</a>
+                </div>
+                <!-- discord end -->
+                <!-- youtube start -->
+                <div
+                    class="join-box fs-5 rounded d-flex flex-column justify-content-evenly align-items-center text-center border border-secondary py-5 px-3">
+                    <p class=" text-capitalize">watch our videos</p>
+                    <i class="fa-brands fa-youtube"></i>
+                    <a href="#" class="text-decoration-none text-dark">click here</a>
+                </div>
+                <!-- youtube end -->
+            </div>
+        </div>
+    </section>
+    <!-- start of join us section -->
+    <!-- start of footer  -->
+    <footer class="footer text-light py-5 py-lg-0">
+        <div class="info container-fluid">
+            <div class="row" style="padding: 30px 10px;">
+                <div class="col-md-4">
+                    <p class="text-center footer-title border border-4 border-start-0 border-end-0"
+                        style="border-color: #94a295 !important;"> <i class="fa-solid fa-message"></i> <span>contact
+                            us</span></p>
+                    <ul class="list-group-flush text-center">
+                        <li class="list-group-item">gotfans@gmail.com</li>
+                        <li class="list-group-item">hbohouseofdragon@yahoo.com</li>
+                        <li class=" list-group-item">+20-00-000-000</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <p style="border-color: #94a295 !important;"
+                        class="text-center footer-title border border-4 border-start-0 border-end-0"> <i
+                            class="fa-solid fa-link"></i> <span>important links</span></p>
+                    <ul class="imp-links list-group-flush text-center">
+                        <li class="list-group-item"> <a href="https://www.westeros.org/">wiki of thrones</a></li>
+                        <li class="list-group-item"> <a href="https://quartermaester.info/"> sond of ice and fire world
+                                map</a></li>
+                        <li class=" list-group-item"><a href="https://www.westerossa.com/">estros arab community</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <p class="text-center footer-title border border-4 border-start-0 border-end-0"
+                        style="border-color: #94a295 !important;"><i class="fa-solid fa-book"></i><span>Books</span></p>
+                    <ul class="list-group-flush text-center" style="font-size:11px">
+                        <li class="list-group-item">A Game of Thrones (1996)</li>
+                        <li class="list-group-item">A Clash of Kings (1998)</li>
+                        <li class="list-group-item">A Storm of Swords (2000)</li>
+                        <li class=" list-group-item">A Feast for Crows (2005)</li>
+                        <li class=" list-group-item">A Dance with Dragons (2011)</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div>
+            <p class="text-center border border-1 border-start-0 border-end-0 border-bo"
+                style="border-color: #94a295 !important;">COPYRIGHTES<sup>&copy;</sup>
+                2023 all
+                rightes reserved by hossam mousa</p>
+        </div>
+
+    </footer>
+    <!-- end of footer -->
+    <!-- end of page content and start of javascript element -->
+    <script src="https://kit.fontawesome.com/917a005ff3.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    </body>
+
+</html>
